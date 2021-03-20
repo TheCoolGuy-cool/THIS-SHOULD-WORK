@@ -146,7 +146,7 @@ function clouds(){
 var rand = Math.round(random(15,85));
 
  if(frameCount%100==0){ 
-cloud = createSprite(800,rand);
+cloud = createSprite(width+30,rand);
 cloud.addImage(cloud_image);
 cloud.velocityX=-3;
 cloud.scale=0.1;
@@ -168,7 +168,7 @@ var rand = Math.round(random(1,6));
     
 if(frameCount%50==0){
 
-cactus=createSprite(800,ig.y-30);
+cactus=createSprite(width+30,ig.y-30);
 cactus.velocityX=-8;
 cactus.scale=0.1;
 if(cactus.x<-1){
